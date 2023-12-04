@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="months" id="months"></div>
+                <div class="weekdays" id="weekdays">
+                    <ul>
+                        <li>Пн</li>
+                        <li>Ср</li>
+                        <li>Пт</li>
+                    </ul>
+                </div>
+                <div class="days" id="days"></div>
+                <div class="legend" id="legend">
+                    <span>Меньше</span>
+                    <div class="meaning" id="meaning">
+                        <div 
+                          class="square" 
+                          style="background: #EDEDED;"
+                          data-cont="0 contributions"
+                          >
+                        </div>
+                        <div 
+                          class="square" 
+                          style="background: #ACD5F2;"
+                          data-cont="1-9 contributions"
+                          >
+                        </div>
+                        <div 
+                          class="square" 
+                          style="background: #7FA8C9;"
+                          data-cont="10-19 contributions"
+                          >
+                        </div>
+                        <div 
+                          class="square" 
+                          style="background: #527BA0;"
+                          data-cont="20-29 contributions"
+                          >
+                        </div>
+                        <div 
+                          class="square" 
+                          style="background: #254E77;"
+                          data-cont="30+ contributions"
+                          >
+                        </div>
+                    </div>
+                    <span>Больше</span>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="index.js" type="module"></script>
+</html>
